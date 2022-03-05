@@ -46,7 +46,7 @@ A *Flink Session cluster* can be used to run multiple jobs. Each job needs to be
 To deploy a *Flink Session cluster* with Docker, you need to start a JobManager container. To enable communication between the containers, we first set a required Flink configuration property and create a network:
 
 ```sh
-$ FLINK_PROPERTIES="jobmanager.rpc.address: jobmanager"
+$ export FLINK_PROPERTIES="jobmanager.rpc.address: jobmanager"
 $ docker network create flink-network
 ```
 
